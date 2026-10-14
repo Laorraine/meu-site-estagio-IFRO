@@ -1,0 +1,532 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #222;
+}
+
+
+/* =========================
+   BARRA LATERAL
+========================= */
+
+/* ==============================
+   SIDEBAR
+   ============================== */
+
+#sidebar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 268px;
+    height: 100vh;
+
+    background-color: white;
+
+    border-right: 1px solid #dddddd;
+
+    z-index: 1000;
+}
+
+
+/* Nome do site */
+
+#sidebar::before {
+    content: "Informática\A- Campus\Ariquemes";
+
+    white-space: pre;
+
+    display: block;
+
+    padding: 145px 40px 35px;
+
+    font-size: 31px;
+    font-weight: bold;
+
+    line-height: 1.25;
+
+    color: #3c4b6d;
+}
+
+
+/* Lista */
+
+#sidebar ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar li {
+    width: 100%;
+}
+
+
+/* Links */
+
+#sidebar a {
+    display: block;
+
+    padding: 19px 43px;
+
+    color: #53627c;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+
+/* Página atual: Fotos */
+
+#sidebar li:nth-child(1) a {
+    background-color: #303652;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* Hover */
+
+#sidebar a:hover {
+    background-color: #e8e8e8;
+
+    color: #303652;
+}
+
+
+/* =========================
+   PRIMEIRA SEÇÃO / BANNER
+========================= */
+
+#section-1 {
+    position: relative;
+
+    min-height: 450px;
+
+    margin-left: 250px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+
+    background-image:
+        linear-gradient(
+            rgba(65, 25, 110, 0.65),
+            rgba(65, 25, 110, 0.65)
+        ),
+        url("imagem/Fundo.png");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* TÍTULO */
+
+#Titulo {
+    margin: 0;
+
+    width: 75%;
+
+    padding: 70px 40px;
+
+    border: 7px solid white;
+
+    border-radius: 15px;
+
+    color: white;
+
+    font-size: 60px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   LUPA
+========================= */
+
+#lupa {
+    position: absolute;
+
+    top: 25px;
+    right: 30px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 30px;
+}
+
+
+/* =========================
+   TEXTO DE APRESENTAÇÃO
+========================= */
+
+body > p {
+    margin: 0;
+
+    margin-left: 250px;
+
+    padding: 60px 10%;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+
+/* =========================
+   LINHAS
+========================= */
+
+hr {
+    margin: 0;
+
+    border: none;
+
+    border-top: 1px solid #ddd;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+#section-horarios,
+#section-2,
+#section-3,
+#section-4 {
+    margin-left: 250px;
+
+    padding: 70px 60px;
+}
+
+
+#section-horarios h2,
+#section-2 h2,
+#section-3 h2,
+#section-4 h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    color: #1555a5;
+
+    font-size: 35px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   HORÁRIOS
+========================= */
+
+#section-horarios {
+    background-color: #fafafa;
+}
+
+
+/* IFRAME DOS HORÁRIOS */
+
+#section-horarios iframe {
+    display: block;
+
+    width: 100%;
+
+    min-height: 900px;
+
+    border: none;
+}
+
+
+/* =========================
+   APRESENTAÇÃO
+========================= */
+
+#section-2 {
+    background-color: white;
+}
+
+
+/* CONTAINER DO CANVA */
+
+.apresentacao {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   ACESSO AO CANVA
+========================= */
+
+#section-3 {
+    text-align: center;
+}
+
+#section-3 p {
+    max-width: 800px;
+
+    margin: 0 auto 25px;
+
+    line-height: 1.7;
+
+    font-size: 18px;
+}
+
+
+/* LINK DO CANVA */
+
+#section-3 a {
+    display: inline-block;
+    padding: 14px 25px;
+}
+
+/* =========================
+   IMAGEM DAS DISCIPLINAS
+========================= */
+
+#imagem-disciplinas {
+    display: block;
+
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+
+    margin: 40px auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   ANIVERSÁRIOS
+========================= */
+
+#section-4 {
+    background-color: #fafafa;
+}
+
+
+/* CALENDÁRIO */
+
+#section-4 iframe {
+    display: block;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    height: 600px;
+
+    margin: 0 auto;
+
+    border: none;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    margin-left: 250px;
+
+    min-height: 150px;
+
+    padding: 45px 30px 25px;
+
+    background-color: #e5e3e0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 18px;
+
+    text-align: center;
+}
+
+
+/* E-MAIL */
+
+footer label {
+    color: #1d2855;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+#email-footer {
+    color: #1d2855;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    text-decoration: underline;
+}
+
+
+/* BOTÃO PORTAL IFRO */
+
+footer button {
+    width: 600px;
+    max-width: 90%;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background-color: #303653;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+
+footer button:hover {
+    background-color: #242943;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    #sidebar {
+        width: 210px;
+    }
+
+
+    #section-1,
+    body > p,
+    #section-horarios,
+    #section-2,
+    #section-3,
+    #section-4,
+    footer {
+        margin-left: 210px;
+    }
+
+
+    #Titulo {
+        width: 90%;
+
+        font-size: 45px;
+    }
+
+
+    #section-horarios,
+    #section-2,
+    #section-3,
+    #section-4 {
+        padding: 50px 30px;
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+    #sidebar {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        padding: 20px;
+
+        border-right: none;
+
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    #section-1,
+    body > p,
+    #section-horarios,
+    #section-2,
+    #section-3,
+    #section-4,
+    footer {
+        margin-left: 0;
+    }
+
+
+    #section-1 {
+        min-height: 350px;
+
+        padding: 20px;
+    }
+
+
+    #Titulo {
+        width: 95%;
+
+        padding: 50px 20px;
+
+        font-size: 35px;
+    }
+
+
+    #section-horarios,
+    #section-2,
+    #section-3,
+    #section-4 {
+        padding: 40px 20px;
+    }
+
+
+    #section-horarios iframe {
+        min-height: 700px;
+    }
+
+
+    #section-4 iframe {
+        height: 500px;
+    }
+}

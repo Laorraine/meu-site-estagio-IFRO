@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: white;
+    color: #263858;
+
+    /* espaço da barra lateral */
+    padding-left: 268px;
+
+    /* espaço superior */
+    padding-top: 155px;
+
+    /* GRID */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    column-gap: 20px;
+
+    padding-right: 40px;
+}
+
+
+/* =========================
+   TÍTULO
+   ========================= */
+
+body::before {
+    content: "Docentes";
+
+    position: absolute;
+
+    top: 95px;
+    left: 268px;
+    right: 40px;
+
+    text-align: center;
+
+    font-size: 58px;
+    font-weight: bold;
+
+    color: #344695;
+}
+
+
+/* =========================
+   SIDEBAR
+   ========================= */
+
+#sidebar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 268px;
+    height: 100vh;
+
+    background-color: white;
+
+    border-right: 1px solid #ddd;
+
+    z-index: 100;
+}
+
+#sidebar::before {
+    content: "Informática\A- Campus\Ariquemes";
+
+    white-space: pre;
+
+    display: block;
+
+    padding: 145px 40px 35px;
+
+    font-size: 31px;
+    font-weight: bold;
+
+    line-height: 1.25;
+
+    color: #3c4b6d;
+}
+
+#sidebar ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar li {
+    width: 100%;
+}
+
+#sidebar a {
+    display: block;
+
+    padding: 19px 43px;
+
+    color: #53627c;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+#sidebar li:nth-child(2) a {
+    background-color: #303652;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+#sidebar a:hover {
+    background-color: #e8e8e8;
+}
+
+
+/* =========================
+   IMAGENS
+   ========================= */
+
+body > img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 10px solid #f2f1ed;
+
+    box-shadow: 0 0 0 2px #e6e4de;
+
+    display: block;
+
+    justify-self: center;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================
+   NOMES
+   ========================= */
+
+body > h2 {
+    text-align: center;
+
+    font-size: 20px;
+
+    color: #263858;
+
+    line-height: 1.2;
+
+    margin-bottom: 27px;
+}
+
+
+/* =========================
+   E-MAILS
+   ========================= */
+
+body > p {
+    text-align: center;
+
+    font-size: 14px;
+
+    color: #333;
+
+    white-space: nowrap;
+
+    margin-bottom: 85px;
+}
+
+body > p a {
+    color: #aa7a42;
+
+    text-decoration: none;
+}
+
+body > p a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   PRIMEIRA LINHA
+   ========================= */
+
+/* Camila */
+body > img:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+body > h2:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+body > p:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+
+/* Eudóxia */
+body > img:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+body > h2:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+body > p:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+
+/* Etinã */
+body > img:nth-of-type(3) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+body > h2:nth-of-type(3) {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+body > p:nth-of-type(3) {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+
+/* Felipe */
+body > img:nth-of-type(4) {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+body > h2:nth-of-type(4) {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+body > p:nth-of-type(4) {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+
+/* =========================
+   SEGUNDA LINHA
+   ========================= */
+
+/* Luciano */
+body > img:nth-of-type(5) {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+body > h2:nth-of-type(5) {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+body > p:nth-of-type(5) {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+
+/* Marcos */
+body > img:nth-of-type(6) {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+body > h2:nth-of-type(6) {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+body > p:nth-of-type(6) {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+
+/* Vagner */
+body > img:nth-of-type(7) {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+body > h2:nth-of-type(7) {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+body > p:nth-of-type(7) {
+    grid-column: 3;
+    grid-row: 6;
+}
+
+
+/* Wallison */
+body > img:nth-of-type(8) {
+    grid-column: 4;
+    grid-row: 4;
+
+    width: 220px;
+    height: 220px;
+}
+
+body > h2:nth-of-type(8) {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+body > p:nth-of-type(8) {
+    grid-column: 4;
+    grid-row: 6;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    grid-column: 1 / -1;
+
+    margin-left: 0;
+
+    width: 100%;
+
+    background-color: #e5e3df;
+
+    padding: 45px;
+
+    text-align: center;
+}
+
+#email-footer {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #303652;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+footer button {
+    width: 600px;
+
+    max-width: 90%;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 3px;
+
+    background-color: #303652;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #444c6b;
+}
